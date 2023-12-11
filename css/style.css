@@ -43,12 +43,12 @@ nav a {
   text-decoration: none;
   padding: 1.6rem 4.6rem;
   display: inline-block;
-  transition: .3s .1s;
+  transition: background-color .5s, transform .5s;
 }
 
 .btn:hover {
   background-color: #ffea09;
-  padding: 2rem 6rem;
+  transform: scale(110%);
 }
 
 .wrapperContainer-dark {
@@ -97,11 +97,11 @@ nav a {
   text-decoration: none;
   padding: .75em 1.15em;
   border: solid 1px;
+  transition: background-color 1.3s;
 }
 
 .header_nav a:hover {
   background-color: #000;
-  transition: 1.3s .2s;
 }
 
 .header_nav ul {
@@ -139,26 +139,36 @@ nav a {
 
 .curso_card {
   flex: 1;
+  border-radius: 10px;
+  border-radius: 10px;
+}
+
+.curso_card-img {
+  overflow: hidden;
+  border-radius: 10px 10px 0 0;
 }
 
 .curso_card img {
   display: block;
   width: 100%;
+  opacity: 50%;
+  transition: opacity 0.5s, transform 0.5s;
+}
+
+.curso_card img:hover {
+  opacity: 100%;
+  transform: scale(110%);
 }
 
 .cursos_card_content {
   border: 1px solid #ccc;
   border-top: transparent;
-  border-radius: 10px;
+  padding: 1rem;
 }
 
 .cursos_card_content p {
   font-size: 1.8rem;
   line-height: 1.5;
-}
-
-.cursos_card_content {
-  padding: 1rem;
 }
 
 .cursos_btn {
